@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "si-image-processing-lab"
+version = "0.1.0"
+description = "Laboratorio MLOps UCV"
+authors = ["Jesus Ramos"]
+readme = "README.md"
+packages = [{ include = "si_image_processing", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+kedro = "^0.19.0"
+kedro-datasets = "^3.0.0"
+pillow = "^10.0.0"
+
+[tool.kedro]
+package_name = "si_image_processing"
+project_name = "si-image-processing-lab"
+kedro_init_version = "0.19.0"
+source_dir = "src"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[tool.kedro_telemetry]
+project_id = "9ef15ad1d0a74124b07a3825d0f21218"
